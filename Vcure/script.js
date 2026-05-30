@@ -85,12 +85,14 @@ document.addEventListener('click', (e) => {
     const navLinks = document.querySelector('.nav-links');
     const hamburger = document.querySelector('.hamburger');
 
-    if (dropTrigger && window.innerWidth <= 991) {
+    if (dropTrigger && window.innerWidth <= 1024) {
+        e.preventDefault();
         const parent = dropTrigger.parentElement;
         if (!parent.classList.contains('active')) {
-            e.preventDefault(); 
             document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('active'));
             parent.classList.add('active');
+        } else {
+            parent.classList.remove('active');
         }
     } else if (!e.target.closest('.dropdown')) {
         // Close dropdowns if clicked outside

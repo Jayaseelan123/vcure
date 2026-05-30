@@ -2652,7 +2652,7 @@ footer::before {
 }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     header {
         padding: 10px 0;
         background: rgba(255, 255, 255, 0.95);
@@ -2958,7 +2958,7 @@ footer::before {
     flex-shrink: 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .commitment-card {
         padding: 40px 20px;
     }
